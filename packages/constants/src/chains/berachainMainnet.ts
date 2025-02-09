@@ -6,8 +6,8 @@ export const berachainMainnet: IceChain = {
   features: ['swap'],
   network: 'berachainmain',
   rpcUrls: {
-    public: { http: ['https://rpc.berachain.com"'] },
-    default: { http: ['https://rpc.berachain.com"'] },
+    public: { http: ['https://rpc.berachain.com'] },
+    default: { http: ['https://rpc.berachain.com'] },
   },
   blockExplorers: {
     default: { name: 'Bera Chain Mainnet Explorer', url: 'https://berascan.com' },
