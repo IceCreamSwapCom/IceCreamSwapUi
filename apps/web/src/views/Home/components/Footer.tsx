@@ -7,12 +7,13 @@ import {
   Button,
   TwitterIcon,
   TelegramIcon,
-  DiscordIcon,
+  MediumIcon,
 } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
 import Container from 'components/Layout/Container'
 import { useWeb3React } from '@pancakeswap/wagmi'
 import SunburstSvg from './SunburstSvg'
+import Image from 'next/image'
 
 const BgWrapper = styled.div`
   overflow: hidden;
@@ -120,7 +121,7 @@ const Footer = () => {
         <Flex mb="24px" style={{ gap: '12px' }}>
           <Button
             as="a"
-            title={t('IceCreamSwap Twitter')}
+            title={t('MermaidSwap Twitter')}
             href="https://x.com/mermaidswap_xyz"
             target="_blank"
             variant="primary"
@@ -131,7 +132,7 @@ const Footer = () => {
           </Button>
           <Button
             as="a"
-            title={t('IceCreamSwap Telegram')}
+            title={t('MermaidSwap Telegram')}
             href="https://t.me/mermaidswapofficial"
             target="_blank"
             variant="primary"
@@ -140,17 +141,36 @@ const Footer = () => {
           >
             <TelegramIcon color="currentColor" mr="8px" /> {t('Telegram')}
           </Button>
-          {/* <Button
+
+          <Button
             as="a"
-            title={t('IceCreamSwap Discord')}
-            href="/discord"
+            title={t('MermaidSwap Medium')}
+            href="https://medium.com/@mermaidswap.xyz"
             target="_blank"
             variant="primary"
             scale="md"
             mr="8px"
           >
-            <DiscordIcon color="currentColor" mr="8px" /> {t('Discord')}
-          </Button> */}
+            <MediumIcon color="currentColor" mr="8px" /> {t('Medium')}
+          </Button>
+        </Flex>
+
+        <Flex mb="24px">
+          <Button
+            as="a"
+            href="https://skynet.certik.com/projects/icecreamswap#code-security"
+            title={`Certik ${t('link')}`}
+            target="_blank"
+            variant="tertiary"
+            scale="md"
+          >
+            <Image
+              src="https://www.certik.com/_app/immutable/assets/certik-logotype-h-w.DyNEOYZy.svg"
+              width={128}
+              height={48}
+              alt="Certik"
+            />
+          </Button>
         </Flex>
       </Wrapper>
     </>
