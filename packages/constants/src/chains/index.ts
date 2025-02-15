@@ -34,6 +34,9 @@ import { berachainTestnet } from "./berachainTestnet"
 import { bitfinitymainnet } from "./bitfinitymainnet"
 import { kaiamainnet } from "./kaiamainnet"
 import { sonicmainnet } from "./sonicmainnet"
+import { assetmainnet } from "./assetMainnet"
+import { berachainMainnet } from "./berachainMainnet"
+import { unichain } from "./unichain"
 
 export const chainMap = {
   core,
@@ -71,7 +74,10 @@ export const chainMap = {
   stratovmTestnet,
   bitfinitytestnet,
   ternoatestnet,
-  berachainTestnet
+  berachainTestnet,
+  assetmainnet,
+  berachainMainnet,
+  unichain,
 }
 export const chains = Object.values(chainMap)
 
@@ -113,6 +119,12 @@ export enum ChainId {
   ROOTSTOCK = rootstock.id,
   LINEA = linea.id,
   BERACHAIN_TEST = berachainTestnet.id,
+  BITFINITY = bitfinitymainnet.id,
+  SONIC = sonicmainnet.id,
+  KAIA = kaiamainnet.id,
+  BERACHAIN_MAIN = berachainMainnet.id,
+  UNICHAIN = unichain.id,
 }
+
 
 export const defaultChainId = ChainId.CORE
