@@ -1,5 +1,14 @@
 import { styled } from 'styled-components'
-import { Flex, Heading, Text, useMatchBreakpoints, Button, TwitterIcon, TelegramIcon, DiscordIcon } from '@pancakeswap/uikit'
+import {
+  Flex,
+  Heading,
+  Text,
+  useMatchBreakpoints,
+  Button,
+  TwitterIcon,
+  TelegramIcon,
+  DiscordIcon,
+} from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
 import Container from 'components/Layout/Container'
 import { useWeb3React } from '@pancakeswap/wagmi'
@@ -81,7 +90,7 @@ const bottomRightImage = {
 const Footer = () => {
   const { t } = useTranslation()
   const { account } = useWeb3React()
-  const { isTablet, isDesktop } = useMatchBreakpoints()
+  const { isMobile, isTablet, isDesktop } = useMatchBreakpoints()
 
   return (
     <>
@@ -101,48 +110,104 @@ const Footer = () => {
       {/*   </FloatingPancakesWrapper> */}
       {/* )} */}
       <Wrapper>
-        <Heading mb="24px" scale="xl" color="white">
-          {t('Join us on social media')}
-        </Heading>
-        <Text textAlign="center" color="white" mb="24px">
-          {t("Don't miss out on the latest news and updates!")}
-        </Text>
-
-        <Flex mb="24px" style={{ gap: '12px' }}>
-          <Button
-            as="a"
-            title={t('IceCreamSwap Twitter')}
-            href="/twitter"
-            target="_blank"
-            variant="primary"
-            scale="md"
-            mr="8px"
-          >
-            <TwitterIcon color="currentColor" mr="8px" /> {t('Twitter')}
-          </Button>
-          <Button
-            as="a"
-            title={t('IceCreamSwap Telegram')}
-            href="/telegram"
-            target="_blank"
-            variant="primary"
-            scale="md"
-            mr="8px"
-          >
-            <TelegramIcon color="currentColor" mr="8px" /> {t('Telegram')}
-          </Button>
-          <Button
-            as="a"
-            title={t('IceCreamSwap Discord')}
-            href="/discord"
-            target="_blank"
-            variant="primary"
-            scale="md"
-            mr="8px"
-          >
-            <DiscordIcon color="currentColor" mr="8px" /> {t('Discord')}
-          </Button>
-        </Flex>
+        {(isMobile || isTablet) && (
+          <Wrapper gap="24px">
+            <Heading scale="lg" color="white">
+              {t('Join us on social media')}
+            </Heading>
+            <Text textAlign="center" color="white">
+              {t("Don't miss out on the latest news and updates!")}
+            </Text>
+            <Wrapper gap="12px">
+              <Flex style={{ width: '100%' }}>
+                <Button
+                  as="a"
+                  title={t('IceCreamSwap Twitter')}
+                  href="/twitter"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  style={{ width: '100%' }}
+                >
+                  <TwitterIcon color="currentColor" mr="8px" /> {t('Twitter')}
+                </Button>
+              </Flex>
+              <Flex style={{ width: '100%' }}>
+                <Button
+                  as="a"
+                  title={t('IceCreamSwap Telegram')}
+                  href="/telegram"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  style={{ width: '100%' }}
+                >
+                  <TelegramIcon color="currentColor" mr="8px" /> {t('Telegram')}
+                </Button>
+              </Flex>
+              <Flex style={{ width: '100%' }}>
+                <Button
+                  as="a"
+                  title={t('IceCreamSwap Discord')}
+                  href="/discord"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  style={{ width: '100%' }}
+                >
+                  <DiscordIcon color="currentColor" mr="8px" /> {t('Discord')}
+                </Button>
+              </Flex>
+            </Wrapper>
+          </Wrapper>
+        )}
+        {isDesktop && (
+          <Wrapper>
+            <Heading mb="24px" scale="xl" color="white">
+              {t('Join us on social media')}
+            </Heading>
+            <Text textAlign="center" color="white" mb="24px">
+              {t("Don't miss out on the latest news and updates!")}
+            </Text>
+            <Wrapper>
+              <Flex mt="24px" style={{ gap: '12px' }}>
+                <Button
+                  as="a"
+                  title={t('IceCreamSwap Twitter')}
+                  href="/twitter"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  style={{ width: '100%' }}
+                >
+                  <TwitterIcon color="currentColor" mr="8px" /> {t('Twitter')}
+                </Button>
+                <Button
+                  as="a"
+                  title={t('IceCreamSwap Telegram')}
+                  href="/telegram"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  style={{ width: '100%' }}
+                >
+                  <TelegramIcon color="currentColor" mr="8px" /> {t('Telegram')}
+                </Button>
+                <Button
+                  as="a"
+                  title={t('IceCreamSwap Discord')}
+                  href="/discord"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  style={{ width: '100%' }}
+                >
+                  <DiscordIcon color="currentColor" mr="8px" /> {t('Discord')}
+                </Button>
+              </Flex>
+            </Wrapper>
+          </Wrapper>
+        )}
       </Wrapper>
     </>
   )
