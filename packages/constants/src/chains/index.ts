@@ -37,6 +37,7 @@ import { sonicmainnet } from "./sonicmainnet"
 import { assetmainnet } from "./assetMainnet"
 import { berachainMainnet } from "./berachainMainnet"
 import { unichain } from "./unichain"
+import { hyperevm } from "./hyperevm"
 
 export const chainMap = {
   core,
@@ -78,6 +79,7 @@ export const chainMap = {
   assetmainnet,
   berachainMainnet,
   unichain,
+  hyperevm,
 }
 export const chains = Object.values(chainMap)
 
@@ -124,6 +126,7 @@ export enum ChainId {
   KAIA = kaiamainnet.id,
   BERACHAIN_MAIN = berachainMainnet.id,
   UNICHAIN = unichain.id,
+  HYPEREVM = hyperevm.id,
 }
 
 
