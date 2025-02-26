@@ -14,6 +14,7 @@ import Container from 'components/Layout/Container'
 import { useWeb3React } from '@pancakeswap/wagmi'
 import SunburstSvg from './SunburstSvg'
 import Image from 'next/image'
+import GitbookIcon from '../../../../public/images/gitbook.svg'
 
 const BgWrapper = styled.div`
   overflow: hidden;
@@ -159,6 +160,28 @@ const Footer = () => {
                   <TelegramIcon color="currentColor" mr="8px" /> {t('Telegram')}
                 </Button>
               </Flex>
+              <Flex style={{ width: '100%' }}>
+                <Button
+                  as="a"
+                  title={t('MermaidSwap Gitbook')}
+                  href="https://mermaidswaps-organization.gitbook.io/mermaidswap"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  style={{ width: '100%' }}
+                >
+                  <Image
+                    src={GitbookIcon.src}
+                    alt="Gitbook"
+                    width={24}
+                    height={24}
+                    style={{
+                      marginRight: '8px',
+                    }}
+                  />{' '}
+                  {t('Gitbook')}
+                </Button>
+              </Flex>
             </Wrapper>
             <Wrapper gap="6px" style={{ width: '100%' }}>
               <Text textAlign="center" color="white">
@@ -214,7 +237,6 @@ const Footer = () => {
                 >
                   <TelegramIcon color="currentColor" mr="8px" /> {t('Telegram')}
                 </Button>
-
                 <Button
                   as="a"
                   title={t('MermaidSwap Medium')}
@@ -225,6 +247,26 @@ const Footer = () => {
                   mr="8px"
                 >
                   <MediumIcon color="currentColor" mr="8px" /> {t('Medium')}
+                </Button>
+                <Button
+                  as="a"
+                  title={t('MermaidSwap Gitbook')}
+                  href="https://mermaidswaps-organization.gitbook.io/mermaidswap"
+                  target="_blank"
+                  variant="primary"
+                  scale="md"
+                  mr="8px"
+                >
+                  <Image
+                    src={GitbookIcon.src}
+                    alt="Gitbook"
+                    width={24}
+                    height={24}
+                    style={{
+                      marginRight: '8px',
+                    }}
+                  />{' '}
+                  {t('Gitbook')}
                 </Button>
               </Flex>
               <Flex mt="24px" alignItems={'center'} gap="12px">
