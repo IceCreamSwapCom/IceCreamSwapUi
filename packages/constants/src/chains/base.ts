@@ -7,8 +7,8 @@ export const base: IceChain = {
   features: ['swap', 'bridge', 'farms', 'kyc'],
   network: 'base',
   rpcUrls: {
-    public: { http: ['https://developer-access-mainnet.base.org',] },
-    default: { http: ['https://developer-access-mainnet.base.org',] },
+    public: { http: ['https://mainnet.base.org',] },
+    default: { http: ['https://mainnet.base.org',] },
   },
   blockExplorers: {
     default: { name: 'Base Explorer', url: 'https://basescan.org' },
