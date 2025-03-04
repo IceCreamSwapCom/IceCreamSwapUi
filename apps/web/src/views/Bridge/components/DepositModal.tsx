@@ -96,7 +96,7 @@ const DepositModal: React.FC<DepositModalProps> = ({ bridge, deposit, approve })
         <Spinner />
       </Flex>
       <Text>{t('Transfer in transit')}</Text>
-      <Text>{t('Please wait, the transaction will take a few minutes')}</Text>
+      <Text>{t('The transaction will take up to 5 minutes')}</Text>
     </>
   )
 
