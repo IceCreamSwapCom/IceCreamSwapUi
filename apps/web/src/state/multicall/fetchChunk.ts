@@ -6,6 +6,7 @@ import { Call } from './actions'
 import { RetryableError } from './retry'
 
 const l2DifferentBlockNumberChains = [
+  ChainId.ARBITRUM
 ]
 
 export type FetchChunkResult = ReturnType<typeof fetchChunk>
