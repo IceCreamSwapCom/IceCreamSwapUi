@@ -38,6 +38,7 @@ import { assetmainnet } from "./assetMainnet"
 import { berachainMainnet } from "./berachainMainnet"
 import { unichain } from "./unichain"
 import { hyperevm } from "./hyperevm"
+import { arbitrum } from "./arbitrum"
 
 export const chainMap = {
   core,
@@ -80,6 +81,7 @@ export const chainMap = {
   berachainMainnet,
   unichain,
   hyperevm,
+  arbitrum,
 }
 export const chains = Object.values(chainMap)
 
@@ -127,6 +129,7 @@ export enum ChainId {
   BERACHAIN_MAIN = berachainMainnet.id,
   UNICHAIN = unichain.id,
   HYPEREVM = hyperevm.id,
+  ARBITRUM = arbitrum.id
 }
 
 

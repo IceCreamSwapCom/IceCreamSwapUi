@@ -3,7 +3,7 @@ import IceChain from '../ice-chain'
 export const arbitrum: IceChain = {
   id: 42161,
   name: 'Arbitrum One',
-  features: ['swap'],
+  features: ['swap', 'bridge'],
   network: 'arbitrum',
   rpcUrls: {
     public: { http: ['https://arbitrum-one.publicnode.com',] },
