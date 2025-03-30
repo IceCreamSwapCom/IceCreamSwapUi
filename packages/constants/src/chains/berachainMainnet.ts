@@ -25,7 +25,7 @@ export const berachainMainnet: IceChain = {
   },
   blockInterval: 2,
   wrappedNative: {
-    address: '0x7507c1dc16935B82698e4C63f2746A2fCf994dF8',
+    address: '0x6969696969696969696969696969696969696969',
     decimals: 18,
     symbol: 'WBERA',
     name: 'Wrapped BERA',
