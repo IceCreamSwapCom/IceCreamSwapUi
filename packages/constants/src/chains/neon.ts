@@ -11,7 +11,7 @@ export const neon: IceChain = {
     default: { http: ['https://neon-proxy-mainnet.solana.p2p.org'] },
   },
   blockExplorers: {
-    default: { name: 'Neon EVM Explorer', url: 'https://neonscan.org' },
+    default: { name: 'Neon EVM Explorer', url: 'https://neon.blockscout.com' },
   },
   nativeCurrency: {
     name: 'Neon EVM',
