@@ -7,8 +7,8 @@ export const xodex: IceChain = {
   features: ['swap', 'farms', 'bridge'],
   network: 'xodex',
   rpcUrls: {
-    public: { http: ['https://xo-dex.io'] },
-    default: { http: ['https://xo-dex.io'] },
+    public: { http: ['https://mainnet.xo-dex.com/rpc'] },
+    default: { http: ['https://mainnet.xo-dex.com/rpc'] },
   },
   blockExplorers: {
     default: { name: 'XoDex Explorer', url: 'https://explorer.xo-dex.com' },
