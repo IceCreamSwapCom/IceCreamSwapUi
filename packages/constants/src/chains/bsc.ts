@@ -8,8 +8,8 @@ export const bsc: IceChain = {
   features: ['bridge'],  // 'swap'
   network: 'binance',
   rpcUrls: {
-    public: { http: ['https://binance.llamarpc.com'] },
-    default: { http: ['https://binance.llamarpc.com'] },
+    public: { http: ['https://bsc.drpc.org'] },
+    default: { http: ['https://bsc.drpc.org'] },
   },
   blockExplorers: {
     default: bscExplorer,
