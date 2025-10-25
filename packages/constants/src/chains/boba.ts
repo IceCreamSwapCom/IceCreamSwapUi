@@ -3,7 +3,7 @@ import IceChain from '../ice-chain'
 export const boba: IceChain = {
   id: 288,
   name: 'Boba Network',
-  features: ['swap', 'bridge', 'info'],
+  features: ['swap', 'bridge'], // 'info'
   network: 'boba',
   rpcUrls: {
     public: { http: ['https://mainnet.boba.network'] },

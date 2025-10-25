@@ -4,7 +4,7 @@ import IceChain from '../ice-chain'
 export const core: IceChain = {
   id: 1116,
   name: 'Core Blockchain Mainnet',
-  features: ['swap', 'swapV3', 'farms', 'farmsV3', 'info', 'infoV3', 'bridge', 'locks', 'staking', 'kyc', 'launchpad', 'tokenDeployer'],
+  features: ['swap', 'swapV3', 'farms', 'farmsV3', 'bridge', 'locks', 'staking'], // 'info', 'infoV3', 'kyc', 'launchpad', 'tokenDeployer'
   network: 'core',
   rpcUrls: {
     public: { http: ['https://rpc-core.icecreamswap.com'] },

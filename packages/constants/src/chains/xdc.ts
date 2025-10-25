@@ -4,7 +4,7 @@ import IceChain from '../ice-chain'
 export const xdc: IceChain = {
   id: 50,
   name: 'XDC Network',
-  features: ['swap', 'bridge', 'farms', 'staking', 'locks', 'info', 'kyc'],
+  features: ['swap', 'bridge', 'farms', 'staking', 'locks', 'kyc'], // 'info'
   network: 'xdc',
   rpcUrls: {
     public: { http: ['https://rpc.ankr.com/xdc'] },

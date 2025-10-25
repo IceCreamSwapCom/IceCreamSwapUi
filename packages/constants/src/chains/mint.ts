@@ -3,7 +3,7 @@ import IceChain from '../ice-chain'
 export const mint: IceChain = {
   id: 185,
   name: 'Mint Network',
-  features: ['swap', 'info'],
+  features: ['swap'], // 'info'
   network: 'mint',
   rpcUrls: {
     public: { http: ['https://rpc.mintchain.io'] },
