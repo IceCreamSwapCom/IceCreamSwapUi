@@ -266,7 +266,7 @@ export const useBestAMMTradeFromQuoterApi = bestTradeHookFactory({
     })
     */
 
-    const serverRes = await fetch(`${QUOTING_API}/${currency.chainId}/v0/quote`, {
+    const serverRes = await fetch(`${QUOTING_API}/${currency.chainId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
