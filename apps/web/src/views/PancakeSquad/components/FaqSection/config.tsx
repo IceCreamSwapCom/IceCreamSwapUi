@@ -9,7 +9,7 @@ const config = ({ t }: FAQsType) => [
   {
     title: t('What is IceCreamSwap building?'),
     description: [
-      t('A one stop DeFi solution with AI DEX aggregator and an intuitive UI to access efficient DeFi on all chains.')
+      t('A one stop DeFi solution with DEX aggregator and an intuitive UI to access efficient DeFi on all chains.')
     ],
   },
   {
@@ -34,11 +34,11 @@ const config = ({ t }: FAQsType) => [
     description: [
       t('The Blockchain is an amazing tool for security and trust minimization. But as it\'s still in It\'s early stage, ' +
         'inefficiencies occur which result in an unwanted value transfer from users to MEV/Arbitrage bots. ' +
-        'Our AI DEX aggregator detects these inefficiencies and automatically extracts them for our users, resulting in more efficient trades and less value lost.'),
+        'Our DEX aggregator detects these inefficiencies and automatically extracts them for our users, resulting in more efficient trades and less value lost.'),
     ],
   },
   {
-    title: t('What is the IceCreamSwap AI DEX aggregator?'),
+    title: t('What is the Nordstern.Finance DEX aggregator?'),
     description: [
       t('It\'s a sophisticated system that scans the entire blockchain to find the optimal way to execute your swap. ' +
         'It allows you to trade any token at the best rate, not only taking into account the IceCreamSwap liquidity, but also the liquidity of other DEXes. ' +
@@ -49,7 +49,7 @@ const config = ({ t }: FAQsType) => [
   {
     title: t('How does IceCreamSwap extract arbitrage for me?'),
     description: [
-      t('With every trade, our AI DEX aggregator not only finds the best way to execute that trade but also scans for arbitrage opportunities. These opportunities are extracted directly in your trade. As most Arbitrage is generated from inefficient trades, IceCreamSwap users not only avoid losing value to arbitrage but also profit directly from users who still rely on traditional DEXes.'),
+      t('With every trade, our DEX aggregator not only finds the best way to execute that trade but also scans for arbitrage opportunities. These opportunities are extracted directly in your trade. As most Arbitrage is generated from inefficient trades, IceCreamSwap users not only avoid losing value to arbitrage but also profit directly from users who still rely on traditional DEXes.'),
     ],
   },
   {

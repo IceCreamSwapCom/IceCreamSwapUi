@@ -37,10 +37,10 @@ const Stats = () => {
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
       <GradientLogo height="48" width="48" style={{ marginBottom: '24px' }} />
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Self improving AI DEX aggregator')}
+        {t('Access all DEXes from a single Interface')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('The AI powered DEX aggregator improves with every swap. The more you trade, the smarter and more efficient the aggregator becomes.')}<br/>
+        {t('Nordstern.Finance indexes thousands of DEXes on >100 chains so IceCreamSwap users get the best swaps every time!')}<br/>
       </Text>
       {/*
       <Flex flexWrap="wrap">

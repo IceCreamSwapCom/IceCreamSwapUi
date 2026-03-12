@@ -15,7 +15,7 @@ export const FormHeader: FC<{ refreshDisabled: boolean; onRefresh: () => void }>
 
   return (
     <CurrencyInputHeader
-      title={t('AI DEX Aggregator')}
+      title={t('DEX Aggregator')}
       subtitle={t('Trade any token at the best rate!')}
       hasAmount={!refreshDisabled}
       onRefreshPrice={handleRefresh}

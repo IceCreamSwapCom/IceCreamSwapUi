@@ -111,10 +111,10 @@ const config = ({ t }: FAQsType) => [
     reached: '01-2024',
   },
   {
-    title: t('In-house AI DEX aggregator'),
+    title: t('Nordstern.Finance DEX aggregator'),
     icon: '🚀',
     description: [
-      t('Implement an AI based DEX aggregator to optimize trading for all our users.'),
+      t('Integrate Nordstern.Finance DEX aggregator to optimize trading for all our users.'),
       t('Provide the best trading rates for any token on IceCreamSwap'),
     ],
     reached: '02-2024',
@@ -126,22 +126,6 @@ const config = ({ t }: FAQsType) => [
       t('Expand to Qitmmer Blockchain'),
     ],
     reached: '04-2024',
-  },
-  {
-    title: t('Implement API for AI DEX aggregator'),
-    icon: '🔌',
-    description: [
-      t('Make our AI DEX aggregator available for projects like wallets providing in wallet swaps'),
-    ],
-    reached: '05-2024',
-  },
-  {
-    title: t('Utilize Machine learning to let AI DEX aggregator learn from every trade'),
-    icon: '🤖',
-    description: [
-      t('Self improving AI in DEX aggregator, learning from every swap')
-    ],
-    reached: '07-2024',
   },
   {
     title: t('Make processes super robust to enable mass expansion'),
