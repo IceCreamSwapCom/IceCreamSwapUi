@@ -43,7 +43,7 @@ export function useStablecoinPrice(
     currency && enableLlama && ['fiat-price-ethereum', currency],
     async () => {
       const address = currency?.isToken ? currency.address : WETH9[chainId].address
-      return fetch(`https://pricing.icecreamswap.com/${chainId}?token=${address}`)
+      return fetch(`https://api.nordstern.finance/prices/${chainId}?token=${address}`)
         .then((res) => res.json())
         .then(
           (res) => res?.[`${address}`],

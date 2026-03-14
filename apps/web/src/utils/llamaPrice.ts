@@ -10,7 +10,7 @@ export const fetchTokenUSDValue = async (chainId: number, tokenAddresses: string
   const list = tokenAddresses.join(',')
 
   const result: { [key: string]: string } = await fetch(
-    `https://pricing.icecreamswap.com/${chainId}?token=${list}`,
+    `https://api.nordstern.finance/prices/${chainId}?token=${list}`,
   )
     .then((res) => res.json())
     .catch(reason => {
