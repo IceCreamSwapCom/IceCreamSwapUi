@@ -302,7 +302,7 @@ const chains = [
       },
     ],
   },
-  {
+  /*{
     domainId: 14,
     networkId: 813,
     name: 'Qitmeer',
@@ -327,7 +327,7 @@ const chains = [
         resourceId: '0x0000000000000000000000C7E6d7E08A89209F02af47965337714153c529F001',
       },
     ],
-  },
+  },*/
   {
     domainId: 15,
     networkId: 81457,
