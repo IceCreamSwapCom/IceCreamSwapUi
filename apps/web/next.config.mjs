@@ -5,7 +5,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import BundleAnalyzer from '@next/bundle-analyzer'
 import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
-import smartRouterPkgs from '@pancakeswap/smart-router/package.json' assert { type: 'json' }
+import smartRouterPkgs from '@pancakeswap/smart-router/package.json' with { type: 'json' }
 import { withWebSecurityHeaders } from '@pancakeswap/next-config/withWebSecurityHeaders'
 import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin'
 
