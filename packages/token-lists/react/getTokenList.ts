@@ -8,6 +8,26 @@ import schema from '../schema/pancakeswap.json'
 
 export const tokenListValidator = new Ajv({ allErrors: true }).compile(schema)
 
+// Characters allowed by the token-list schema for `name` and `symbol`.
+// Any character outside these sets (e.g. emojis) is stripped instead of failing validation.
+const DISALLOWED_NAME_CHARS = /[^ \w.'+\-%/@À-ÖØ-öø-ÿ:&\[\]()]/gu
+const DISALLOWED_SYMBOL_CHARS = /[^a-zA-Z0-9+\-%/$.]/gu
+
+/**
+ * Removes characters that aren't allowed by the token-list schema from each token's
+ * name and symbol, so unsupported characters (like emojis) don't fail validation.
+ */
+function sanitizeTokenList(tokens: TokenInfo[]): void {
+  for (const token of tokens) {
+    if (typeof token.name === 'string') {
+      token.name = token.name.replace(DISALLOWED_NAME_CHARS, '').trim()
+    }
+    if (typeof token.symbol === 'string') {
+      token.symbol = token.symbol.replace(DISALLOWED_SYMBOL_CHARS, '')
+    }
+  }
+}
+
 /**
  * Contains the logic for resolving a list URL to a validated token list
  * @param listUrl list url
@@ -34,8 +54,9 @@ export default async function getTokenList(listUrl: string): Promise<TokenList> 
 
     const json = await response.json()
     if (json.tokens) {
+      sanitizeTokenList(json.tokens)
       remove<TokenInfo>(json.tokens, (token) => {
-        return token.symbol ? token.symbol.length === 0 : true
+        return !token.symbol || !token.name
       })
     }
     if (!tokenListValidator(json)) {
