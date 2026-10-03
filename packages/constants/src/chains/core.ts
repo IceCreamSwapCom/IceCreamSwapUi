@@ -7,8 +7,8 @@ export const core: IceChain = {
   features: ['swap', 'swapV3', 'farms', 'farmsV3', 'bridge', 'locks', 'staking'], // 'info', 'infoV3', 'kyc', 'launchpad', 'tokenDeployer'
   network: 'core',
   rpcUrls: {
-    public: { http: ['https://rpc.coredao.org'] },
-    default: { http: ['https://rpc.coredao.org'] },
+    public: { http: ['https://rpc.ankr.com/core'] },
+    default: { http: ['https://rpc.ankr.com/core'] },
   },
   blockExplorers: {
     default: { name: 'CORE Explorer', url: 'https://scan.coredao.org' },
