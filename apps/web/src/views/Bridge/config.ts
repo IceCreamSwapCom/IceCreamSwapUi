@@ -276,7 +276,7 @@ const chains = [
       },
     ],
   },
-  {
+  /*{
     domainId: 13,
     networkId: 245022934,
     name: 'Neon EVM',
@@ -301,7 +301,7 @@ const chains = [
         resourceId: '0x0000000000000000000000C7E6d7E08A89209F02af47965337714153c529F001',
       },
     ],
-  },
+  },*/
   /*{
     domainId: 14,
     networkId: 813,
