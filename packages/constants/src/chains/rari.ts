@@ -3,7 +3,7 @@ import IceChain from '../ice-chain'
 export const rari: IceChain = {
   id: 1380012617,
   name: 'Rari',
-  features: ['swap', 'bridge'],
+  features: ['swap'],
   network: 'rari',
   rpcUrls: {
     public: { http: ['https://mainnet.rpc.rarichain.org/http',] },
